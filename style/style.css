@@ -1,0 +1,39 @@
+.blacklist-btn {
+  position: absolute !important;
+  top: 1rem !important;
+  right: 1rem !important;
+  color: #cdd9e2 !important;
+  border-bottom: 1px solid currentColor;
+  cursor: pointer !important;
+  transition: all 0.1s;
+}
+
+.blacklist-btn:hover {
+  color: #aeb0b1;
+}
+
+.blacklist-btn:active {
+  transform: translateY(0.2rem);
+}
+
+.blacklist-profile-btn {
+  text-align: right;
+  cursor: pointer !important;
+  transition: all 0.1s;
+}
+
+.blacklist-profile-btn > span {
+  /*Wykop css fixes*/
+  padding: 0 !important;
+  margin-left: 0 !important;
+  border-left: none;
+  /*Wykop css fixes*/
+}
+
+.blacklist-profile-btn:hover {
+  color: #aeb0b1;
+}
+
+.blacklist-profile-btn:active {
+  transform: translateY(0.2rem);
+}

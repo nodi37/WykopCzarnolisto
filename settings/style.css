@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 2px;
+}
+
+#blacklist-table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.table__item:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.table__item:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+.table__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  color: black;
+  font-size: 16px;
+}
+
+.table__item:hover {
+  background-color: #0a84ff38;
+}
+
+.table__item--black {
+  background-color: #f0f0f4;
+}
+
+.table__item--white {
+  background-color: white;
+}
+
+.table__item-delete-btn {
+    cursor: pointer;
+}

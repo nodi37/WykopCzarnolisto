@@ -1,0 +1,51 @@
+{
+  "description": "Zewnętrzna nielimitowana czarna lista dla wykop.pl",
+  "manifest_version": 2,
+  "name": "WykopCzarnolisto",
+  "version": "1.0",
+  "homepage_url": "https://github.com/nodi37/czarnolistowykop.git",
+  "icons": {
+    "48": "icons/black_list-48.png"
+  },
+  "developer": {
+    "name": "wobloblo",
+    "url": "https://www.wykop.pl/ludzie/wobloblo/"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.wykop.pl/*"
+      ],
+      "js": [
+        "src/core.js"
+      ],
+      "css": [
+        "style/style.css"
+      ]
+    },
+    {
+      "matches": [
+        "*://*.wykop.pl/ludzie/*"
+      ],
+      "js": [
+        "src/userProfile.js"
+      ],
+      "css": [
+        "style/style.css"
+      ]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "unlimitedStorage"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "022c80cb-da4a-40c4-a255-3710e7c0713d@example.com",
+      "strict_min_version": "42.0"
+    }
+  },
+  "options_ui": {
+    "page": "settings/options.html"
+  }
+}
